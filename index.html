@@ -14,7 +14,7 @@
         background-color: lightgray;
         layout: fixed;
         overflow: hidden;
-        width: 100w;
+        width: 100vw;
         font-size: 20px;
         padding-left: 10px;
     }
@@ -27,16 +27,54 @@
     .button:hover {
         background-color: gainsboro;
     }
+
+    .block {
+        width: 100vw;
+        background-color: lightgray;
+        display: flex;
+    }
+    .left {
+        width: 60vw;
+        height: inherit;
+        padding: 20px;
+    }
+    .right {
+        width: 40vw;
+        height: inherit;
+    }
+    .big {
+        font-size:40px;
+    }
+    .mid {
+        font-size:20px;
+    }
 </style>
 
 <body>
-    <!--Navigation bar-->
-    <div class="bar">
-        <b>AI Project</b>
-        <a href="index.html"><div class="button">Home</div></a>
-        <a href="aboutus.html"><div class="button">About Us</div></a>
-        <a href="getproduct.html"><div class="button">Get Product</div></a>
+<!--Navigation bar-->
+<div class="bar">
+    <b>AI Project</b>
+    <a href="index.html"><div class="button">Home</div></a>
+    <a href="aboutus.html"><div class="button">About Us</div></a>
+    <a href="getproduct.html"><div class="button">Get Product</div></a>
+</div>
+<!--end of Navigation bar-->
+
+<!-- info box-->
+<br><br><br><br><br>
+<div class="block">
+    <div class="left">
+        <div class="big">An AI-powered productivity app </div>
+        <br>Track your activity, wow!
+        <br>Get recommendations to improve productivity!
+        <br><br><div class="mid">Totally Real Reviews:</div>
+        ★★★★★ <i>yes this is a very good product</i>
+        <br>★★★★★ <i>10/10 would recommend</i>
     </div>
-    <!--end of Navigation bar-->
+    <div class="right" style="background-color:blue">
+
+    </div>
+</div>
+<!-- end info box-->
 </body>
 </html>
