@@ -9,38 +9,28 @@
 
 <style>
     body {
-        margin: 0;
         font-family: 'Times New Roman', Times, serif;
     }
 
-    .bar {
-        background-color: lightgray;
-        position: fixed;
-        overflow: hidden;
-        width: 100%;
-        font-size: 20px;
-        padding-left: 10px;
-        z-index: 100;
+    .button2 {
+        background-color: lawngreen;
     }
-    .button {
-        color: black;
-        width: 15w;
-        display: inline-block;
-        padding: 10px;
-    }
-    .button:hover {
-        background-color: gainsboro;
+    .button2:hover {
+        background-color: greenyellow,
     }
 </style>
 
 <body>
 <!--Navigation bar-->
-<div class="bar">
-    <b>My Automation App</b>
-    <a href="index.html"><div class="button">Home</div></a>
-    <a href="aboutus.html"><div class="button">About Us</div></a>
-    <a href="getproduct.html"><div class="button">Get Product</div></a>
+<div id="nav-placeholder">
+
 </div>
+
+<script>
+    $(function(){
+      $("#nav-placeholder").load("navi.html");
+    });
+</script>
 <!--end of Navigation bar-->
 
     <div style="width: 1728px; height: 499px; left: 0px; top: 618px; position: absolute; background: #D9D9D9"></div>
@@ -53,7 +43,7 @@
         <span style="color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">3. instruction</span>
     </div>
     <div style="width: 770px; height: 140px; left: 200px; top: 360px; position: absolute; background: #D9D9D9"></div>
-    <div style="left: 200px; top: 406px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">DOWNLOAD: Click to download -></div>
+    <div class="button2" style="left: 200px; top: 406px; position: absolute; text-align: center; color: black; font-size: 40px; font-family: Inter; font-weight: 400; word-wrap: break-word">DOWNLOAD: Click to download -></div>
 </div>
 </body>
 
