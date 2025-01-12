@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+    }
+    h1 {
+        font-size: 80px;
+        text-align: center;
+        position: relative;
+        top: 100px;
+    }
+
+    .block {
+        width: 100vw;
+        background-color: lightgray;
+        margin-top: 400px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .left {
+        width: auto;
+        height: inherit;
+        padding: 20px;
+        flex-shrink: 0.7;
+    }
+    .right {
+        width: 500px;
+        height: inherit;
+        flex-shrink: 2;
+    }
+    .big {
+        font-size:40px;
+    }
+    .mid {
+        font-size:20px;
+    }
+</style>
+
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+    $(function(){
+      $("#nav-placeholder").load("navi.html");
+    });
+</script>
+<!--end of Navigation bar-->
+
+<!-- info box-->
+<br><br><br><br><br>
+<h1>Our Sponsors</h1>
+<div class="block">
+    
+    <div class="left">
+        <div class="big">Sponsors</div>
+        <br>List Sponsors here
+
+    </div>
+    <div class="right" style="background-color:#00A1FF">
+
+    </div>
+</div>
+<!-- end info box-->
+</body>
+</html>
