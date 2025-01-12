@@ -3,30 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>Home></title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 
 <style>
     body {
-        margin: 0;
         font-family: 'Times New Roman', Times, serif;
-    }
-
-    .bar {
-        background-color: lightgray;
-        layout: fixed;
-        overflow: hidden;
-        width: 100vw;
-        font-size: 20px;
-        padding-left: 10px;
-    }
-    .button {
-        color: black;
-        width: 15w;
-        display: inline-block;
-        padding: 10px;
-    }
-    .button:hover {
-        background-color: gainsboro;
     }
 
     .block {
@@ -56,12 +38,15 @@
 
 <body>
 <!--Navigation bar-->
-<div class="bar">
-    <b>My Automation App</b>
-    <a href="index.html"><div class="button">Home</div></a>
-    <a href="aboutus.html"><div class="button">About Us</div></a>
-    <a href="getproduct.html"><div class="button">Get Product</div></a>
+<div id="nav-placeholder">
+
 </div>
+
+<script>
+    $(function(){
+      $("#nav-placeholder").load("navi.html");
+    });
+</script>
 <!--end of Navigation bar-->
 
 <!-- info box-->
